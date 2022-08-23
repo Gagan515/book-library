@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  color: black;
+  background-color: white;
+}
+.App_Dark {
+  min-height: 100vh;
+  color: rgb(252, 249, 249);
+  background-color: rgb(5, 5, 5);
+}
+.head_grid {
+  height: 9vh;
+  padding-top: 12vh;
+  border-bottom: 2px solid #d1b1d4;
+  display: grid;
+  place-items: center;
+}
+.body_grid {
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+.body_grid::-webkit-scrollbar {
+  display: none;
+}
+.body {
+  height: 100%;
+}
+
+.head {
+  padding-top: 12vh;
+  display: grid;
+  place-items: center;
+  border-bottom: 2px solid #d1b1d4;
+}
