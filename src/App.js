@@ -39,6 +39,7 @@ function App() {
     if (searchVal === "") return item;
     else if (item.title.toLowerCase().includes(searchVal?.toLowerCase()))
       return item;
+    else return item
   });
 
   return (
@@ -56,8 +57,8 @@ function App() {
         <div className={`${!grid ? "body" : "body_grid"}`}>
           {!grid && <Subhead />}
           {filteredArray.length > 0 ? (
-            filteredArray.map((item) => (
-              <div>
+            filteredArray.map((item, index) => (
+              <div key={index}>
                 <Switch>
                   <Route exact path="/">
                     <Item
