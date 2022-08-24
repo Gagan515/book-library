@@ -50,6 +50,7 @@ const Header = ({ mode, setMode, setsearchVal, setGrid }) => {
   );
 
   const handleChange = (e) => {
+    console.log("typed")
     const nextVal = e.target.value;
     setInputVal(nextVal);
     debouncedSave(nextVal);

@@ -34,12 +34,11 @@ function App() {
   //   }
   //   getData();
   // }, []);
-
+  console.log(searchVal, 'searchVal')
   var filteredArray = data.filter((item) => {
     if (searchVal === "") return item;
     else if (item.title.toLowerCase().includes(searchVal?.toLowerCase()))
       return item;
-    else return item
   });
 
   return (
